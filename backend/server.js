@@ -2,17 +2,22 @@ var express = require("express");
 var app = express();
 const bcrypt = require('bcrypt');
 var jwt = require('jsonwebtoken');
+var passport= require('passport');
 var cors = require('cors');
 var multer = require('multer'),
   bodyParser = require('body-parser'),
   path = require('path');
+  var authRoute=require("./routes/auth")
 var mongoose = require("mongoose");
 var fs = require('fs');
+require("./passport")
 var product = require("./model/product.js");
 var user = require("./model/user.js");
+const { session } = require("passport");
 
 
-
+app.use(passport.initialize());
+app.use(passport,session());
 
 mongoose
   .connect(

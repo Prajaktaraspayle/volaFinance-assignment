@@ -11,6 +11,30 @@ body {
 .centerTable {
   margin: 0px auto;
 }
+ .button-btn,.button-btn-1{
+  width: 20%;
+  height: 50%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+ }
+ .button-btn-1{
+  background-color: beige;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-box;
+  font-size: 20px;
+  border-radius: 5%;
+ }
+ .button-btn{
+  background-color: blue;
+  border:none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-box;
+  font-size: 20px;
+  border-radius: 5%;
+ }
 
 h2 {
     color: #3f51b5;

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import swal from 'sweetalert';
 import { Button, TextField, Link } from '@material-ui/core';
+import {FcGoogle} from 'react-icons/fc';
+import {BsFacebook} from 'react-icons/bs';
 const axios = require('axios');
 const bcrypt = require('bcryptjs');
 var salt = bcrypt.genSaltSync(10);
@@ -81,6 +83,14 @@ export default class Login extends React.Component {
           <Link href="/register">
             Register
           </Link>
+          <div>
+            <button className="button-btn-1"
+            color="secondary"
+            ><FcGoogle/></button><br/>
+            <button className="button-btn"
+            color="info"
+          ><BsFacebook/></button>
+          </div>
         </div>
       </div>
     );
